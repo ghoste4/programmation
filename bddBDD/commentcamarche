@@ -1,0 +1,25 @@
+Melousta BALAN - 12108306
+Dan CALUGAREANU - 12014715
+Adico OBROU - 12103045
+Lamine Daffe - 12010693
+
+Projet ReadMe, une application de bibliotheque. 
+
+Ensemble des fichiers constituants le projet et leur utilite :
+
+Les fichiers *.csv : books_.csv, borrowing.csv, ratings.csv, reservations.csv, users_.csv
+contiennent les donnees relatives aux differentes tables: books, borrowing, rate, reservations, users. 
+
+Les fichiers *.sql : books.sql, borrowing.sql, rate.sql, reservations.sql, users.sql
+sont utilises pour creer les differentes tables avec "create table nomdelatable".
+
+Les fichiers *.py : books.py, borrowing.py, rate.py, reservation.py, user.py 
+sont utilises pour faire le lien entre les fichiers.csv et les fichiers.sql pour pouvoir inserer les donnees dans les tables. 
+
+Les fichiers *-data.sql : books-data.sql, borrowing-data.sql, rate-data.sql, reservation-data.sql, users-data.sql
+contiennent les donnees a inserer directement dans les tables sur le post psql (post l3info_51 pour notre cas) 
+
+et le fichier inter.py est le fichier principal. Il contient le code python permettant de faire les lienes entre l'interface graphique et les donnees necessaires a son bon fonctionnement. 
+
+
+les tables sont deja remplies sur le post 51 avec \i fichier-data.sql depuis le psql l3info_51 et le projet s'execute avec :python3 inter.py depuis un terminal offert dans le dossier ou contiennent les differents fichiers cites dans ce fichier. 
